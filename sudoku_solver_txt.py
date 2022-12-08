@@ -33,7 +33,7 @@ def is_valid(grid, i, j, num):
       if grid[row][col] == num:
         return False
 
-  # the number is valid
+  # if the number is valid
   return True
 
 # function to solve the Sudoku puzzle
@@ -57,10 +57,10 @@ def solve_sudoku(grid):
         # the puzzle is solved, so return the solved grid
         return True
 
-      # the number is not valid, so backtrack
+      # if the number is not valid, try to backtrack
       grid[i][j] = 0
 
-  # no number is valid in the current cell, so backtrack
+  # if no number is valid in the current cell, try to backtrack
   return False
 
 # example Sudoku puzzle
